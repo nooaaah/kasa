@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../styles/App.scss'
-import Navbar from './NavBar'
+import Navbar from '../components/NavBar'
 import { Link } from 'react-router';
 import logo from '../assets/logo.png'
 

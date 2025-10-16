@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import "../styles/Logement.scss";
-import Navbar from "./NavBar";
-import DropDown from "./DropDown";
-import SlidesHow from "./Slideshow";
+import Navbar from "../components/NavBar";
+import DropDown from "../components/DropDown";
+import SlidesHow from "../components/Slideshow";
 import { useParams } from "react-router";
 import { Navigate } from "react-router";
 import logements from "../data/logements.json";

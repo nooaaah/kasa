@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import '../styles/Apropos.scss'
-import Navbar from './NavBar'
+import Navbar from '../components/NavBar'
 import { Link } from 'react-router';
 import logo from '../assets/logo.png'
-import Banner2 from './Banner2';
-import DropDown from './DropDown';
+import Banner2 from '../components/Banner2';
+import DropDown from '../components/DropDown';
 
 function APropos() {
   

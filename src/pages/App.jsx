@@ -1,15 +1,13 @@
 import { useState } from 'react'
 import '../styles/App.scss'
 import APropos from './APropos'
-import Location from './Location'
 import Erreur from './Erreur'
-import logo from '../assets/logo.png'
-import Navbar from './NavBar'
+import Navbar from '../components/NavBar'
 import { Link } from 'react-router';
-import Banner from './Banner'
+import Banner from '../components/Banner'
 import Image_banner from '../assets/Image-banner.png'
-import Card from './Card'
-import FooterCom from './FooterCom'
+import Card from '../components/Card'
+import FooterCom from '../components/FooterCom'
 import logements from '../data/logements.json'
 
 

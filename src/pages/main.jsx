@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import '../styles/index.scss'
 import App from './App.jsx';
 import APropos from './APropos.jsx';
-import Location from './Location.jsx';
 import Erreur from './Erreur.jsx';
 import Logement from './Logement.jsx';
 

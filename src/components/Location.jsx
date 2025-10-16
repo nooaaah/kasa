@@ -5,7 +5,7 @@ import '../styles/App.scss'
 
 
 function Location() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     

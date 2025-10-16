@@ -1,0 +1,17 @@
+.Banner2{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/src/assets/Image-banner2.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    border: 30px;
+    border-radius: 25px;
+    width: 70vw;
+    height: 15vh;
+    opacity: 200%;
+  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

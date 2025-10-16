@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import '../styles/App.scss'
+import '../styles/Apropos.scss'
 import Navbar from './NavBar'
 import { Link } from 'react-router';
 import logo from '../assets/logo.png'
-
+import Banner2 from './Banner2';
+import DropDown from './DropDown';
 
 function APropos() {
   
@@ -11,12 +12,27 @@ function APropos() {
   return (
      <div>
 			<Navbar/>
-			
-    
-    
-        <p>
-          Je suis sur a propos
-        </p>
+			<Banner2/>
+
+      <DropDown titre="Fiabilité">
+       <p>test</p>  
+      </DropDown>
+
+      <DropDown titre="Respect">
+      <p>test</p>
+      </DropDown>
+      
+      <DropDown titre="Service">
+      <p>test</p>
+      </DropDown>
+
+      <DropDown titre="Sécurité">
+      <p>test</p>
+      </DropDown>
+
+
+
+        
       </div>
   )
 }

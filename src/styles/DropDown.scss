@@ -1,0 +1,55 @@
+// Variables
+$dropdown-red: #ff6060;
+$dropdown-bg: #f6f6f6;
+$dropdown-text: #000000;
+
+.dropdown {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+
+  /* Bouton (titre + flèche) */
+  &-toggle {
+    width: 100%;
+    background-color: $dropdown-red;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: background-color 0.3s ease;
+
+    .dropdown-title {
+      color: white;
+      text-align: left;
+    }
+
+    .dropdown-arrow {
+      font-size: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    &.open .dropdown-arrow {
+      transform: rotate(-180deg);
+    }
+  }
+
+  /* Contenu déroulant */
+  &-menu {
+    background-color: $dropdown-bg;
+    color: $dropdown-text;
+    border-radius: 0 0 10px 10px;
+    padding: 1.2rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-top: -2px; // colle le contenu au bouton
+  }
+}

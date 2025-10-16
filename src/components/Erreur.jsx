@@ -11,11 +11,12 @@ function Erreur() {
       <div>
         <Navbar/>
         
-      
+        <h2>404</h2>
      
         <p>
-          Je suis sur erreur
+          Oups! La page que vous demandez n'existe pas.
         </p>
+        <Link to="/" className='LinkNav'>Retourner sur la page d’accueil</Link>
       </div>
   )
 }

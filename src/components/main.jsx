@@ -6,6 +6,7 @@ import App from './App.jsx';
 import APropos from './APropos.jsx';
 import Location from './Location.jsx';
 import Erreur from './Erreur.jsx';
+import Logement from './Logement.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/a-propos" element={<APropos />} />
       <Route path="/location" element={<Location />} />
       <Route path='/*' element={<Erreur/>}/>
+      <Route path='/Logement/:id' element={<Logement/>}/>
     </Routes>
     
   </BrowserRouter>,

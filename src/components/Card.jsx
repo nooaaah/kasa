@@ -1,26 +1,28 @@
 import '../styles/Card.scss'
-import logements from '../data/logements.json'
+import { Link } from 'react-router';
 
-function Card () {
+function Card ({data}) {
 
 
 
 
     return(
         
-        logements.map((logements) => (
-            <div key={logements.id} className='Card'>
-                <img src={logements.cover} className='CardImg'/>
-                <p className='CardP'>{logements.title}</p>
+        
+            <div className='Card'>
+                <Link to={`/Logement/${data.id}`}>
+                <img src={data.cover} className='CardImg'/>
+                </Link>
+                <p className='CardP'>{data.title}</p>
             </div>
         
 
 
 
-    )
+    
 
 
-))}
+)}
 
 
 

@@ -1,4 +1,4 @@
-// Variables
+
 $dropdown-red: #ff6060;
 $dropdown-bg: #f6f6f6;
 $dropdown-text: #000000;
@@ -9,47 +9,63 @@ $dropdown-text: #000000;
   margin-bottom: 1.5rem;
   overflow: hidden;
 
-  /* Bouton (titre + flèche) */
-  &-toggle {
-    width: 100%;
+ 
+  &-header {
     background-color: $dropdown-red;
     color: #fff;
-    border: none;
     border-radius: 10px;
     padding: 1rem 1.2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    cursor: pointer;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    transition: background-color 0.3s ease;
-
-    .dropdown-title {
-      color: white;
-      text-align: left;
-    }
-
-    .dropdown-arrow {
-      font-size: 1rem;
-      transition: transform 0.3s ease;
-    }
-
-    &.open .dropdown-arrow {
-      transform: rotate(-180deg);
-    }
+    cursor: pointer;
   }
 
-  /* Contenu déroulant */
-  &-menu {
+  .dropdown-title {
+    text-align: left;
+    margin: 0;
+  }
+
+  
+  .dropdown-arrow {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    user-select: none;
+  }
+
+  .dropdown-arrow.rotated {
+    transform: rotate(-180deg);
+  }
+
+
+  .dropdown-content {
     background-color: $dropdown-bg;
     color: $dropdown-text;
     border-radius: 0 0 10px 10px;
-    padding: 1.2rem;
+    padding: 0 1.2rem;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 1rem;
     line-height: 1.6;
-    font-size: 0.95rem;
-    margin-top: -2px; // colle le contenu au bouton
+    transition: max-height 0.4s ease, padding 0.4s ease;
+
+    &.show {
+      max-height: 500px;
+      padding: 1.2rem;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .dropdown-header {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .dropdown-content {
+    font-size: 0.9rem;
   }
 }

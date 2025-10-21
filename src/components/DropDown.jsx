@@ -1,31 +1,24 @@
 import { useState } from 'react';
-import '../styles/DropDown.scss'
+import '../styles/DropDown.scss'; 
 
-
-
-
-const DropDown = ({ titre, children  }) => {
+const DropDown = ({ titre, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  
   return (
     <div className="dropdown">
-      
-      <button
-        className={`dropdown-toggle ${isOpen ? "open" : ""}`}
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <span className="dropdown-title">{titre}</span>
-        <i className="fa-solid fa-chevron-up dropdown-arrow"></i>
-      </button>
-      
-      {isOpen && (
-        <div className="dropdown-menu">
-          {children }
-        </div>)}
+      <div className="dropdown-header" onClick={() => setIsOpen(!isOpen)}>
+        <h3 className="dropdown-title">{titre}</h3>
+        <i
+          className={`fa-solid fa-chevron-up dropdown-arrow ${isOpen ? 'rotated' : ''}`}
+        ></i>
+      </div>
+
+      <div className={`dropdown-content ${isOpen ? 'show' : ''}`}>
+        {children} 
+        <a href=""></a>
+      </div>
     </div>
   );
 };
 
-
-export default DropDown
+export default DropDown;

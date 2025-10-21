@@ -6,6 +6,7 @@ import SlidesHow from "../components/Slideshow";
 import { useParams } from "react-router";
 import { Navigate } from "react-router";
 import logements from "../data/logements.json";
+import FooterCom from "../components/FooterCom";
 
 function Logement() {
   const { id } = useParams();
@@ -44,7 +45,7 @@ function Logement() {
         <>
           <SlidesHow pictures={logement.pictures} title={logement.title} />
           <div className="logement-header">
-            <div className="logement-left">
+            <div className="logement-info">
               <h2>{logement.title}</h2>
               <h3>{logement.location}</h3>
               <ul className="tags-list">
@@ -89,7 +90,10 @@ function Logement() {
           </div>
         </>
       )}
+      <FooterCom />
     </div>
+    
+    
   );
 }
 

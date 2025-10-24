@@ -1,21 +1,20 @@
 .CardContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
-  justify-content: flex-start;
-  gap: 20px;
   padding: 20px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 20px auto;
+  width: 86%;
   background-color: #f6f6f6;
   border-radius: 20px;
   box-sizing: border-box;
   transition: all 0.3s ease;
 
+
+  justify-content: center;
+  margin: 20px auto;
+
   .Card {
     position: relative;
-    
+    margin: 25px;
     aspect-ratio: 1 / 1;
     border-radius: 10px;
     overflow: hidden;
@@ -79,4 +78,5 @@
       margin: 0 auto;
     }
   }
+  
 }

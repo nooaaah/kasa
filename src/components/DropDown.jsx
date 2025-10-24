@@ -6,11 +6,15 @@ const DropDown = ({ titre, children }) => {
 
   return (
     <div className="dropdown">
-      <div className="dropdown-header" onClick={() => setIsOpen(!isOpen)}>
+      <div className="dropdown-header" >
         <h3 className="dropdown-title">{titre}</h3>
+        <button
+          className="dropdown-toggle"
+          onClick={() => setIsOpen(!isOpen)}>
         <i
           className={`fa-solid fa-chevron-up dropdown-arrow ${isOpen ? 'rotated' : ''}`}
         ></i>
+        </button>
       </div>
 
       <div className={`dropdown-content ${isOpen ? 'show' : ''}`}>

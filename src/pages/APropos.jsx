@@ -11,19 +11,19 @@ function APropos() {
 
       <div className="apropos__panels">
         <DropDown titre="Fiabilité">
-          <p>La fiabilité</p>
+          <p>Les annonces postées sur Kasa garantissent uine fiabilité totale. Les photos sont conformes aux logements et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
         </DropDown>
 
         <DropDown titre="Respect">
-          <p>Le respect</p>
+          <p>La bienviellance fait partie des valeurs fondatrices de Kasa. Tout comportements discriminatoire ou de perrtubation du voisinage entraînera une exclusion de notre plateforme.</p>
         </DropDown>
 
         <DropDown titre="Service">
-          <p>Nos services</p>
+          <p>La qualité du service est au coeur de notre engagement chez Kasa. Nous veillons à ce que chaque interaction, que ce soit avec nos hôtes ou nos locataires, soit empreinte de respect et de bienviellance</p>
         </DropDown>
 
         <DropDown titre="Sécurité">
-          <p>La sécurité </p>
+          <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes</p>
         </DropDown>
       </div>
 

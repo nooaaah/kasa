@@ -2,7 +2,8 @@
     display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 8rem;
+  margin-top: 1rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -17,8 +18,31 @@
 .nav-link{
     color: black;
     text-decoration: none;
-
+    font-weight: 500;
+    font-size: 24px;
     &.active{
       text-decoration: underline;
     }
+    &.shadow-active {
+         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+      }
+}
+/* 📱 Version mobile (<= 768px) */
+@media (max-width: 768px) {
+  .NavBar {
+    padding: 0.8rem 2rem;     /* 🔹 Légèrement plus d’air horizontal */
+    margin-top: 0.5rem;
+
+    .DivLogo img {
+      height: 36px;           /* 🔹 Logo plus grand qu’avant (30px → 36px) */
+    }
+
+    .DivLink {
+      gap: 1.2rem;            /* 🔹 Un peu plus d’espace entre les liens */
+    }
+
+    .nav-link {
+      font-size: 1rem;        /* 🔹 Texte un peu plus grand (0.9rem → 1rem) */
+    }
+  }
 }

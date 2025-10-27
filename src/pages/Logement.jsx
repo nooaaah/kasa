@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import "../styles/Logement.scss";
-import Navbar from "../components/NavBar";
-import DropDown from "../components/DropDown";
-import SlidesHow from "../components/Slideshow";
+import Navbar from "../components/NavBar/NavBar";
+import DropDown from "../components/DropDown/DropDown";
+import SlidesHow from "../components/Slideshow/Slideshow";
 import { useParams } from "react-router";
 import { Navigate } from "react-router";
 import logements from "../data/logements.json";
-import FooterCom from "../components/FooterCom";
+import FooterCom from "../components/FooterCom/FooterCom";
 
 function Logement() {
   const { id } = useParams();

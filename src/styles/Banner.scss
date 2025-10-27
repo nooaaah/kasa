@@ -31,6 +31,7 @@
   @media (max-width: 768px) {
     height: 111px;
     border-radius: 10px;
+    box-shadow: none;
 
     .BannerH1 {
       font-size: clamp(24px, 4vw, 48px);

@@ -1,8 +1,8 @@
 import '../styles/APropos.scss'
-import Navbar from '../components/NavBar'
-import Banner2 from '../components/Banner2'
-import DropDown from '../components/DropDown'
-import FooterCom from '../components/FooterCom'
+import Navbar from '../components/NavBar/NavBar'
+import Banner2 from '../components/Banner2/Banner2'
+import DropDown from '../components/DropDown/DropDown'
+import FooterCom from '../components/FooterCom/FooterCom'
 function APropos() {
   return (
     <div className="apropos">

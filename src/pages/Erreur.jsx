@@ -1,7 +1,7 @@
 import '../styles/Erreur.scss'
-import Navbar from '../components/NavBar'
+import Navbar from '../components/NavBar/NavBar'
 import { Link } from 'react-router'
-import FooterCom from '../components/FooterCom'
+import FooterCom from '../components/FooterCom/FooterCom'
 
 function Erreur() {
   return (

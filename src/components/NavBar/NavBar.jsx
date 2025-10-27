@@ -1,5 +1,5 @@
-import '../styles/Navbar.scss'
-import logo from '../assets/logo.png'
+import '../../styles/Navbar.scss'
+import logo from '../../assets/logo.png'
 import { Link } from 'react-router';
 import { NavLink, useLocation  } from 'react-router';
 function Navbar() {

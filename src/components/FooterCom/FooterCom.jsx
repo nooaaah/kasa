@@ -1,5 +1,5 @@
-import '../styles/FooterCom.scss'
-import logoBlanc from '../assets/LOGO-BLANC.png'
+import '../../styles/FooterCom.scss'
+import logoBlanc from '../../assets/LOGO-BLANC.png'
 
 function FooterCom () {
 

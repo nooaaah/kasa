@@ -8,12 +8,10 @@
   box-sizing: border-box;
 }
 
-
 .DivLink {
   display: flex;
   gap: 1rem; 
 }
-
 
 .nav-link{
     color: black;
@@ -22,27 +20,35 @@
     font-size: 24px;
     &.active{
       text-decoration: underline;
+      text-underline-offset: 5px;
+      
     }
     &.shadow-active {
          text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
       }
 }
-/* 📱 Version mobile (<= 768px) */
+
 @media (max-width: 768px) {
   .NavBar {
-    padding: 0.8rem 2rem;     /* 🔹 Légèrement plus d’air horizontal */
-    margin-top: 0.5rem;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1.2rem 6.5vw 0.4rem 6.5vw; 
 
     .DivLogo img {
-      height: 36px;           /* 🔹 Logo plus grand qu’avant (30px → 36px) */
+      height: 11vw;
     }
 
     .DivLink {
-      gap: 1.2rem;            /* 🔹 Un peu plus d’espace entre les liens */
+      gap: 1rem;
     }
 
     .nav-link {
-      font-size: 1rem;        /* 🔹 Texte un peu plus grand (0.9rem → 1rem) */
+      font-size: 3.5vw;
+      text-transform: uppercase;
+      &.shadow-active {
+        text-shadow: none;
+      }
     }
   }
 }

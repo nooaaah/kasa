@@ -1,9 +1,9 @@
 import '../../styles/FooterCom.scss'
 import logoBlanc from '../../assets/LOGO-BLANC.png'
 
-function FooterCom () {
+function FooterCom() {
 
-    return(
+    return (
         <footer className='FooterDiv'>
             <img src={logoBlanc} alt='logo-kasa' className='kasa-logo' />
             <p>© 2020 Kasa. All rights reserved</p>

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "../styles/Logement.scss";
 import Navbar from "../components/NavBar/NavBar";
 import DropDown from "../components/DropDown/DropDown";
-import SlidesHow from "../components/Slideshow/Slideshow";
+import Slideshow from "../components/Slideshow/Slideshow";
 import { useParams } from "react-router";
 import { Navigate } from "react-router";
 import logements from "../data/logements.json";
@@ -15,11 +15,6 @@ function Logement() {
 
 
   useEffect(() => {
-    // const foundLogement = logements.find((item) => item.id === id);
-
-    // const foundLogement = logements.find(function (item) {
-    //   return item.id === id;
-    // });
 
     const foundLogement = logements.find(function (logement, index) {
       if (logement.id === id) {
@@ -43,7 +38,7 @@ function Logement() {
         <Navigate to="/404" replace />
       ) : (
         <>
-          <SlidesHow pictures={logement.pictures} title={logement.title} />
+          <Slideshow pictures={logement.pictures} title={logement.title} />
           <div className="logement-header">
             <div className="logement-info">
               <h2>{logement.title}</h2>
@@ -92,8 +87,8 @@ function Logement() {
       )}
       <FooterCom />
     </div>
-    
-    
+
+
   );
 }
 

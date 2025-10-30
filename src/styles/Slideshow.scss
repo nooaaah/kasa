@@ -1,49 +1,46 @@
-.SlidesHow {
+.Slideshow {
   position: relative;
   width: 86%;
   margin: 20px auto;
   border-radius: 15px;
   overflow: hidden;
 
-  
-  .SlidesHow-wrapper {
-  position: relative;
-  width: 100%;
-  height: 450px;
-}
+  .Slideshow-wrapper {
+    position: relative;
+    width: 100%;
+    height: 450px;
+  }
 
-.SlidesHow-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-  opacity: 0;
-  transform: scale(1.02);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
+  .Slideshow-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0;
+    transform: scale(1.02);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
 
-.SlidesHow-image.active {
-  opacity: 1;
-  transform: scale(1);
-}
+  .Slideshow-image.active {
+    opacity: 1;
+    transform: scale(1);
+  }
 
   .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: none; 
+    background: none;
     color: white;
     border: none;
-    font-size: 3rem; 
+    font-size: 3rem;
     padding: 0;
     cursor: pointer;
     z-index: 10;
     transition: color 0.2s;
-
-    
   }
 
   .left {
@@ -54,9 +51,9 @@
     right: 15px;
   }
 
-   .counter {
+  .counter {
     position: absolute;
-    bottom: 40px; 
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -64,5 +61,12 @@
     font-size: 1.2rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     z-index: 10;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .Slideshow .Slideshow-wrapper {
+    height: 300px;
   }
 }

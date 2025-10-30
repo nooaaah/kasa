@@ -1,11 +1,10 @@
 
 
 .logement-container {
-  
   margin: 0 auto;
   min-height: 100vh;
   color: #ff6060;
-  font-family: sans-serif;
+  
 }
 
 .FooterDiv {
@@ -156,11 +155,6 @@ ul {
 
 
 @media (max-width: 768px) {
-  .logement-container {
-    padding: 0 1rem;
-  }
-
-  
   .logement-header {
     flex-direction: column; 
     align-items: flex-start;

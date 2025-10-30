@@ -1,4 +1,3 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router";
 import '../styles/index.scss'
@@ -12,10 +11,9 @@ createRoot(document.getElementById('root')).render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/a-propos" element={<APropos />} />
-      <Route path="/location" element={<Location />} />
-      <Route path='/*' element={<Erreur/>}/>
-      <Route path='/Logement/:id' element={<Logement/>}/>
+      <Route path='/*' element={<Erreur />} />
+      <Route path='/Logement/:id' element={<Logement />} />
     </Routes>
-    
+
   </BrowserRouter>,
 )

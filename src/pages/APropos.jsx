@@ -1,13 +1,17 @@
 import '../styles/APropos.scss'
 import Navbar from '../components/NavBar/NavBar'
-import Banner2 from '../components/Banner2/Banner2'
+import Banner from '../components/Banner/Banner'
 import DropDown from '../components/DropDown/DropDown'
 import FooterCom from '../components/FooterCom/FooterCom'
+import Image_banner2 from '../assets/Image-banner2.png';
 function APropos() {
   return (
     <div className="apropos">
       <Navbar />
-      <Banner2 />
+      <Banner className='banner2'
+      image={Image_banner2}
+      alt="Bannière À propos"
+    />
 
       <div className="apropos__panels">
         <DropDown titre="Fiabilité">

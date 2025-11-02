@@ -1,16 +1,14 @@
 import '../../styles/Banner.scss'
-import Image_banner from '../../assets/Image-banner.png'
 
 
-function Banner() {
-    return (
-        <div className='Banner'>
-            <img src={Image_banner} alt="Bannière " className="banner" />
-            <h1 className='BannerH1'>Chez vous, partout et ailleurs</h1>
-        </div>
-    )
+
+function Banner({ image, alt, text, className = '' }) {
+  return (
+    <div className={`Banner ${className}`}>
+      <img src={image} alt={alt} className="banner" />
+      {text && <h1 className="BannerH1">{text}</h1>}
+    </div>
+  );
 }
 
-
-
-export default Banner
+export default Banner;

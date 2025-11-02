@@ -5,7 +5,7 @@ import Banner from '../components/Banner/Banner'
 import Card from '../components/Card/Card'
 import FooterCom from '../components/FooterCom/FooterCom'
 import logements from '../data/logements.json'
-
+import Image_banner from '../assets/Image-banner.png'
 
 
 function App() {
@@ -16,7 +16,12 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Banner />
+      <Banner 
+      image={Image_banner}
+      alt="Bannière d'accueil"
+      text="Chez vous, partout et ailleurs"
+      
+      />
       <div className='CardContainer'>
         {displayCard}
       </div>

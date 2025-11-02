@@ -14,7 +14,13 @@
     display: block;
     filter: brightness(70%);
   }
-
+   &.banner2 {
+      box-shadow: none; 
+      
+      .banner{
+        filter: none;
+      }
+    }
   .BannerH1 {
     position: absolute;
     inset: 0;
@@ -26,20 +32,30 @@
     font-weight: 700;
     text-align: center;
     padding: 0 1rem;
+
+    
   }
 
   @media (max-width: 768px) {
     height: 111px;
     border-radius: 10px;
     box-shadow: none;
-
+    &.banner2{
+      height: 111px;
+      border-radius: 10px;
+      object-position: center;
+      margin: 20px auto;
+    }
     .BannerH1 {
-      font-size: clamp(24px, 4vw, 48px);
+      font-size: clamp(24px, 3.7vw, 48px);
       justify-content: flex-start;
       align-items: flex-start;
       padding: 1rem;
       text-align: left;
-      width: 66%;
+      width: 100%;
+      max-width: 300px; 
+      text-wrap: balance;
     }
+    
   }
 }
